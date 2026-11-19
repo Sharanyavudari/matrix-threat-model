@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="82nwnkgEu8U0k8v_glz_">
+    <mxGraphModel dx="2040" dy="781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#ffffff, #121212)" backgroundGradient="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-24" edge="1" parent="1" source="kDJ75JcPeIY8eqXXXYiO-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" x="0.3548" as="geometry">
+            <Array as="points">
+              <mxPoint x="-60" y="155" />
+              <mxPoint x="-60" y="150" />
+              <mxPoint x="40" y="150" />
+            </Array>
+            <mxPoint x="-60" y="160" as="sourcePoint" />
+            <mxPoint x="40" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-34" connectable="0" parent="kDJ75JcPeIY8eqXXXYiO-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="F1: uname + pass" vertex="1">
+          <mxGeometry relative="1" x="0.329" y="1" as="geometry">
+            <mxPoint x="-33" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User&lt;div&gt;E1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="-220" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-28" edge="1" parent="1" source="kDJ75JcPeIY8eqXXXYiO-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="kDJ75JcPeIY8eqXXXYiO-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="160" />
+              <mxPoint x="450" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-35" connectable="0" parent="kDJ75JcPeIY8eqXXXYiO-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="F3: credentials" vertex="1">
+          <mxGeometry relative="1" x="-0.0105" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-42" edge="1" parent="1" source="kDJ75JcPeIY8eqXXXYiO-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="kDJ75JcPeIY8eqXXXYiO-23" value="F7: session cookie / error">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="190" />
+              <mxPoint x="230" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="AuthN&lt;div&gt;P1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-29" edge="1" parent="1" source="kDJ75JcPeIY8eqXXXYiO-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="kDJ75JcPeIY8eqXXXYiO-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="150" />
+              <mxPoint x="650" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-37" connectable="0" parent="kDJ75JcPeIY8eqXXXYiO-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="F4: username lookup" vertex="1">
+          <mxGeometry relative="1" x="-0.2211" y="-2" as="geometry">
+            <mxPoint x="11" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-32" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="453" y="190" />
+              <mxPoint x="453" y="190" />
+            </Array>
+            <mxPoint x="498" y="190" as="sourcePoint" />
+            <mxPoint x="403" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-39" connectable="0" parent="kDJ75JcPeIY8eqXXXYiO-32" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="F6:&amp;nbsp;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;auth result&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1368" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-4" parent="1" style="whiteSpace=wrap;html=1;rounded=1;roundedPerimeter=1;" value="Check Cred&lt;div&gt;P2&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="495" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-33" edge="1" parent="1" source="kDJ75JcPeIY8eqXXXYiO-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="kDJ75JcPeIY8eqXXXYiO-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="180" />
+              <mxPoint x="660" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-38" connectable="0" parent="kDJ75JcPeIY8eqXXXYiO-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="F5: password hash" vertex="1">
+          <mxGeometry relative="1" x="-0.024" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-6" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" value="User DB&lt;div&gt;D1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="740" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-14" parent="1" style="html=1;fontColor=#FF3333;fontStyle=1;align=left;verticalAlign=top;spacing=0;labelBorderColor=none;fillColor=none;dashed=1;strokeWidth=2;strokeColor=#FF3333;spacingLeft=4;spacingTop=-3;" value="Auth tier" vertex="1">
+          <mxGeometry height="140" width="415" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-20" parent="1" style="html=1;fontColor=#FF3333;fontStyle=1;align=left;verticalAlign=top;spacing=0;labelBorderColor=none;fillColor=none;dashed=1;strokeWidth=2;strokeColor=#FF3333;spacingLeft=4;spacingTop=-3;" value="Verification Tier" vertex="1">
+          <mxGeometry height="140" width="150" x="480" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-27" edge="1" parent="1" source="kDJ75JcPeIY8eqXXXYiO-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="kDJ75JcPeIY8eqXXXYiO-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="160" />
+              <mxPoint x="240" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-36" connectable="0" parent="kDJ75JcPeIY8eqXXXYiO-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="F2: uname + pass" vertex="1">
+          <mxGeometry relative="1" x="0.125" y="-2" as="geometry">
+            <mxPoint x="-5" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-43" edge="1" parent="1" source="kDJ75JcPeIY8eqXXXYiO-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry relative="1" x="0.0769" as="geometry">
+            <Array as="points">
+              <mxPoint x="-10" y="180" />
+              <mxPoint x="-10" y="180" />
+            </Array>
+            <mxPoint x="-90" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-44" connectable="0" parent="kDJ75JcPeIY8eqXXXYiO-43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="F8: session cookie / error" vertex="1">
+          <mxGeometry relative="1" y="-1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Web Server&lt;div&gt;P0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="30" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="kDJ75JcPeIY8eqXXXYiO-41" parent="1" style="html=1;fontColor=#FF3333;fontStyle=1;align=left;verticalAlign=top;spacing=0;labelBorderColor=none;fillColor=none;dashed=1;strokeWidth=2;strokeColor=#FF3333;spacingLeft=4;spacingTop=-3;" value="Data Tier" vertex="1">
+          <mxGeometry height="140" width="150" x="725" y="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
