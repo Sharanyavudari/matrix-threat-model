@@ -60,3 +60,88 @@ Check three things:
    - Was each threat addressed correctly?
    - Did we find all the threats we should have?
 3. Check the tests. Test each addressed threat, either manually or with automation, to confirm the mitigation works.
+
+Shostack Ch. 2: Strategies for Threat Modeling
+
+THREE APPROACHES TO THREAT MODELING
+
+1. Focusing on assets
+2. Focusing on attackers
+3. Focusing on software
+
+Getting started
+A good starting point is a literature review: read existing threat models of systems similar to yours, understand how and why they were done, then brainstorm ideas for your own analysis.
+
+Choosing an approach
+To decide which approach suits the system, brainstorm the trade-offs using one of these techniques:
+
+1. Scenario-based: walk through scenarios drawn from the use cases of the current development cycle, such as failover scenarios.
+2. Pre-mortem: imagine the system has already failed, then express the concerns and doubts that explain why.
+3. Movie plotting: build a storyline around a flawed protagonist (our system), a brilliant antagonist (the attackers) and imaginary gadgets, making sure all three are involved.
+
+----------------------------------------
+
+1. FOCUSING ON ASSETS
+
+This approach is not very common. It is generally used by security experts with deep threat modeling knowledge and experience.
+
+In this context, an asset can be:
+a. something an attacker wants (tangibles such as keys and data)
+b. something the security team wants to protect (intangibles such as reputation)
+c. something required for either of the above
+
+Process: list all assets, associate them with computer systems, draw them with their interconnections, work out how an attacker could threaten each asset, and list the resulting threats.
+
+Drawback: agreeing on the list of assets takes a lot of effort, and a methodology for the actual threat modeling is still needed afterwards. By that point, no threats have been found yet.
+
+2. FOCUSING ON ATTACKERS
+
+Like the asset-centric approach, this is not optimal. It considers attacker types, their resources and capabilities, and human-centered attacks. What it does well is help us understand who might want to attack the system.
+
+3. FOCUSING ON SOFTWARE
+
+Software-centric models focus on the software being built or the system being deployed, which helps expose the accumulated complexity of the system.
+
+This approach requires modeling the system with diagrams. The goal of every diagram is to communicate how the system works, so that everyone involved in the threat model shares the same understanding.
+
+Types of diagrams
+
+1. Data flow diagram (DFD)
+2. Unified Modeling Language (UML): if the software process already uses UML, add trust boundaries for threat modeling.
+3. Swim lane diagrams: represent the flow between participants.
+4. State diagrams: represent the states a system can be in and the transitions between them.
+
+DFD elements
+
+Process: rectangle with rounded corners. Any running code.
+Data flow: arrow (from source to sink). Communication between processes, or between processes and data stores.
+Data store: two parallel lines. Things that store data.
+External entity: rectangle. People, or code outside your control.
+
+----------------------------------------
+
+TRUST BOUNDARIES
+
+There are two ways to add trust boundaries:
+- add the known boundaries, then look for more, or
+- enumerate the principals and derive boundaries from them.
+
+Two main questions to ask:
+1. Do all principals have the same privilege and access to the complete system?
+2. Is everything in the system inside the same boundary?
+
+Most threats cluster around trust boundaries, so ensuring they are correctly drawn is necessary.
+
+WHAT TO INCLUDE IN A DIAGRAM
+
+- Show the events that drive the system.
+- Show the processes that are driven.
+- Determine what responses each process will generate and send.
+- Identify the data sources for each request and response.
+- Identify the recipient of each response.
+- Ignore the inner workings and focus on scope.
+- Ask whether something will help you think about what goes wrong or find threats.
+
+VALIDATING DIAGRAMS
+
+Validating a diagram has two main goals: ensuring accuracy and aspiring to goodness. Include the elements that have a security impact, and for each one consider whether that impact arises in a common scenario or only in a special instance.
