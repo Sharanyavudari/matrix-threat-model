@@ -232,11 +232,12 @@ STRIDE VARIANTS
 STRIDE-per-element
 Not every threat applies to every element in a DFD.
 
-Element            S   T   R   I   D   E
-External entity    x       x
-Process            x   x   x   x   x   x
-Data flow              x       x   x
-Data store             x   ?   x   x
+STRIDE-per-element
+| Element | type |	S |	T |	R |	I |	D |	E |
+| External entity |	✓	|	| ✓ | | | |			
+| Process |	✓ |	✓ |	✓ |	✓ |	✓ |	✓ |
+| Data flow |	|	✓ |	|	✓ |	✓| |	
+| Data store | | ✓ | ? | ✓ | ✓ | |
 
 Two weaknesses:
 1. Similar issues keep coming up.
