@@ -145,3 +145,126 @@ WHAT TO INCLUDE IN A DIAGRAM
 VALIDATING DIAGRAMS
 
 Validating a diagram has two main goals: ensuring accuracy and aspiring to goodness. Include the elements that have a security impact, and for each one consider whether that impact arises in a common scenario or only in a special instance.
+
+Shostack Ch. 3: STRIDE
+
+OVERVIEW
+
+Each STRIDE threat violates a different security property and affects different parts of the system.
+
+Spoofing
+Property violated: authentication
+Meaning: pretending to be something or someone other than yourself
+Typical targets: processes, external entities, people
+
+Tampering
+Property violated: integrity
+Meaning: modifying something on disk, on a network, or in memory
+Typical targets: data stores, data flows, processes
+
+Repudiation
+Property violated: non-repudiation
+Meaning: claiming you did not do something, or were not responsible for it
+Typical targets: processes
+
+Information disclosure
+Property violated: confidentiality
+Meaning: giving information to someone who is not authorized to see it
+Typical targets: processes, data stores, data flows
+
+Denial of service
+Property violated: availability
+Meaning: absorbing the resources needed to provide a service
+Typical targets: processes, data stores, data flows
+
+Elevation of privilege
+Property violated: authorization
+Meaning: allowing someone to do something they are not authorized to do
+Typical targets: processes
+
+----------------------------------------
+
+THREATS IN DETAIL
+
+Spoofing threats
+Spoofing has three subcategories:
+1. Spoofing a process or file on the same machine
+2. Spoofing a machine (can act as a mediator, or steal machine authentication)
+3. Spoofing a person
+
+Tampering threats
+1. Tampering with files
+2. Tampering with memory
+3. Tampering with a network
+
+Repudiation threats
+Repudiation differs from the other threats because it often appears at the business layer.
+1. Attacking the logs
+2. Repudiating an action
+
+Information disclosure threats
+1. Information disclosure from a process
+2. Information disclosure from a data store
+3. Information disclosure from a data flow
+
+Denial-of-service threats
+By duration, there are two types:
+1. Lasts only while the attacker is attacking
+2. Persists, and can remain until the system reboots
+
+By effort, there are two types:
+1. Amplified attack: small effort, great impact
+2. Unamplified attack: the opposite [check against the book]
+
+Denial of service can target:
+1. A process
+2. A data store
+3. A data flow
+
+Elevation of privilege threats
+1. Elevating privileges by corrupting a process
+2. Elevating privileges through authorization failures
+
+----------------------------------------
+
+STRIDE VARIANTS
+
+STRIDE-per-element
+Not every threat applies to every element in a DFD.
+
+Element            S   T   R   I   D   E
+External entity    x       x
+Process            x   x   x   x   x   x
+Data flow              x       x   x
+Data store             x   ?   x   x
+
+Two weaknesses:
+1. Similar issues keep coming up.
+2. It does not cover all issues.
+
+STRIDE-per-interaction
+This variant looks at the origin, the destination and the interaction, and enumerates threats from those. It is the more practical and easier approach.
+| # | Element | Interaction | S | T | R | I | D | E | Marks in my paste |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | Process | Outbound data flow to a data store | | | | | | | 2 |
+| 2 | Process | Sends output to another process | | | | | | | 5 |
+| 3 | Process | Sends output to an external interactor (code) | | | | | | | 4 |
+| 4 | Process | Sends output to an external interactor (human) | | | | | | | 1 |
+| 5 | Process | Inbound data flow from a data store | | | | | | | 4 |
+| 6 | Process | Inbound data flow from a process | | | | | | | 4 |
+| 7 | Process | Inbound data flow from an external interactor | | | | | | | 3 |
+| 8 | Data flow | Crosses a machine boundary | | | | | | | 3 |
+| 9 | Data store | Process has outbound data flow to the data store | | | | | | | 4 |
+| 10 | Data store | Process has inbound data flow from the data store | | | | | | | 3 |
+| 11 | External interactor | Passes input to a process | | | | | | | 3 |
+| 12 | External interactor | Gets input from a process | | | | | | | 1 |
+Using this approach, we should be able to find threats through our mitigations, which helps us do well at finding threats.
+
+DESIST
+A variant of STRIDE. DESIST stands for Dispute, Elevation of privilege, Spoofing, Information disclosure, Service denial, and Tampering.
+
+----------------------------------------
+
+CHECKING THAT THE WORK IS DONE
+
+To check that we found enough threats, compare the results against STRIDE-per-element. If there is not at least one threat for each applicable category, the process is not complete.
