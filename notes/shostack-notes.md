@@ -244,20 +244,20 @@ Two weaknesses:
 
 STRIDE-per-interaction
 This variant looks at the origin, the destination and the interaction, and enumerates threats from those. It is the more practical and easier approach.
-| # | Element | Interaction | S | T | R | I | D | E | Marks in my paste |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | Process | Outbound data flow to a data store | | | | | | | 2 |
-| 2 | Process | Sends output to another process | | | | | | | 5 |
-| 3 | Process | Sends output to an external interactor (code) | | | | | | | 4 |
-| 4 | Process | Sends output to an external interactor (human) | | | | | | | 1 |
-| 5 | Process | Inbound data flow from a data store | | | | | | | 4 |
-| 6 | Process | Inbound data flow from a process | | | | | | | 4 |
-| 7 | Process | Inbound data flow from an external interactor | | | | | | | 3 |
-| 8 | Data flow | Crosses a machine boundary | | | | | | | 3 |
-| 9 | Data store | Process has outbound data flow to the data store | | | | | | | 4 |
-| 10 | Data store | Process has inbound data flow from the data store | | | | | | | 3 |
-| 11 | External interactor | Passes input to a process | | | | | | | 3 |
-| 12 | External interactor | Gets input from a process | | | | | | | 1 |
+STRIDE-per-interaction (verified against the book)
+#	Element	Interaction	S	T	R	I	D	E	
+1	Process	Outbound data flow to a data store	✓			✓			
+2	Process	Sends output to another process	✓		✓	✓	✓	✓	
+3	Process	Sends output to an external interactor (code)	✓		✓	✓	✓		
+4	Process	Sends output to an external interactor (human)			✓				
+5	Process	Inbound data flow from a data store	✓	✓			✓	✓	
+6	Process	Inbound data flow from a process	✓		✓		✓	✓	
+7	Process	Inbound data flow from an external interactor	✓				✓	✓	
+8	Data flow	Crosses a machine boundary		✓		✓	✓		
+9	Data store	Process has outbound data flow to the data store		✓	✓	✓	✓		
+10	Data store	Process has inbound data flow from the data store			✓	✓	✓		
+11	External interactor	Passes input to a process	✓		✓	✓			
+12	External interactor	Gets input from a process	✓						
 Using this approach, we should be able to find threats through our mitigations, which helps us do well at finding threats.
 
 DESIST
