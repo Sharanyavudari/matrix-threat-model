@@ -8,3 +8,19 @@
 | F6 | P2 Check Cred → P1 AuthN | 2, 6, 8 | S, T, R, I, D, E |
 | F7 | P1 AuthN → P0 Web Server | 2, 6 | S, R, I, D, E |
 | F8 | P0 Web Server → E1 User | 3, 12, 8 | S, T, R, I, D |
+
+| Element | S | T | R | I | D | E |
+|---|---|---|---|---|---|---|
+| E1 User | ☐ | | ☐ | | | |
+| P0 Web Server | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| P1 AuthN | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| P2 Check Cred | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| D1 User DB | | ☐ | ☐ (logs only) | ☐ | ☐ | |
+| F1 | | ☐ | | ☐ | ☐ | |
+| F2 | | ☐ | | ☐ | ☐ | |
+| F3 | | ☐ | | ☐ | ☐ | |
+| F4 | | ☐ | | ☐ | ☐ | |
+| F5 | | ☐ | | ☐ | ☐ | |
+| F6 | | ☐ | | ☐ | ☐ | |
+| F7 | | ☐ | | ☐ | ☐ | |
+| F8 | | ☐ | | ☐ | ☐ | |
